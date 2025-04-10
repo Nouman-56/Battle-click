@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Battle Arena | BattleClick Pro</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="battle-theme">
+    <!-- Header -->
+    <header class="battle-header">
+        <div class="user-info">
+            <span id="displayName">Loading...</span>
+            <div class="premium-badge" id="premiumBadge">
+                <i class="fas fa-crown"></i> PREMIUM
+            </div>
+        </div>
+        
+        <div class="battle-timer">
+            <i class="fas fa-clock"></i>
+            <span id="countdown">29d 23h 59m</span>
+        </div>
+    </header>
+    
+    <!-- Main Battle Area -->
+    <main class="battle-arena">
+        <div class="click-counter">
+            <h3>YOUR CLICKS</h3>
+            <div class="counter" id="userClicks">0</div>
+        </div>
+        
+        <button id="clickBtn" class="explode-btn">
+            <div class="inner-circle"></div>
+            CLICK TO WIN!
+        </button>
+        
+        <div class="global-counter">
+            <h3>TOTAL WAR</h3>
+            <div class="counter" id="globalClicks">0</div>
+        </div>
+    </main>
+    
+    <!-- Leaderboard Preview -->
+    <section class="leader-preview">
+        <h3><i class="fas fa-trophy"></i> TOP WARRIORS</h3>
+        <ol id="top5"></ol>
+        <a href="leaderboard.html" class="view-all">View Full Leaderboard →</a>
+    </section>
+    
+    <!-- Boost Panel -->
+    <div class="boost-panel">
+        <button class="boost-btn" id="adBoost">
+            <i class="fas fa-ad"></i> WATCH AD (10min 2x)
+        </button>
+        <button class="boost-btn premium" id="goPremium">
+            <i class="fas fa-gem"></i> GET PREMIUM ($10)
+        </button>
+    </div>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/battle.js"></script>
+</body>
+</html>
